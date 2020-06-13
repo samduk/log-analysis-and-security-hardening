@@ -19,35 +19,38 @@ deny from all
      add_filter( 'auto_update_plugin', '\__return_true' );
 
 # Enable automatic upgrade themes for WordPress core
-    - in wp-config.php
-    - add_filter( 'auto_update_theme', '\__return_true' );
+     in wp-config.php
+     add_filter( 'auto_update_theme', '\__return_true' );
 
 
 
 # wp-security-audit-log
 
 # Change the Login Error Messages
-    - functions.php
+
+    functions.php
+
     function custom_wordpress_error_message(){
         return 'That was not quite correct...';
     }
     add_filter( 'login_errors', 'custom_wordpress_error_message' );
 
 # Add Salt Keys in wp-config.php
-    - [salt key](https://api.wordpress.org/secret-key/1.1/salt/)
+     [salt key](https://api.wordpress.org/secret-key/1.1/salt/)
 
 # Disable the Theme and Plugin Editor
-    - goto wp-config.php and paste the following line
-    - define('DISALLOW_FILE_EDIT', true);
+     goto wp-config.php and paste the following line
+
+     define('DISALLOW_FILE_EDIT', true);
 
 # Disable PHP Error Reporting
-    - goto wp-config.php
+     goto wp-config.php
 
         error_reporting(0);
         @ini_set(‘display_errors’, 0);
 
 # Remove the WordPress Version
-    - functions.php
+     functions.php
 
     function remove_wordpress_version_number() {
         return '';
@@ -64,12 +67,12 @@ deny from all
 
 # Core Directories Permissions
     - Files 640
-        - find /path/to/your/wordpress/install/ -type f -exec chmod 640 {} \;
+         find /path/to/your/wordpress/install/ -type f -exec chmod 640 {} \;
     - Folders 750       
-        - find /path/to/your/wordpress/install/ -type d -exec chmod 750 {} \;
+         find /path/to/your/wordpress/install/ -type d -exec chmod 750 {} \;
 
 # Prevent Directory Listing
-    - Options All -Indexes
+    Options All -Indexes
 
 
 # Lock Out Specific IP Addresses
