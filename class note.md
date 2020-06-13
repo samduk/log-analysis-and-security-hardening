@@ -120,7 +120,7 @@
 	2.3 How to unblock people by IP
 	2.4 How to unblock people by port (or delete the RULE)  (assignment)
 
-For Reading:
+For Reading: <br>
 	[Resource 1](https://www.hostingswift.com/how-to-block-or-unblock-an-ip-address-on-a-linux-server) <br>
 	[Resource 2](https://www.e2enetworks.com/help/knowledge-base/how-to-block-ip-address-on-linux-server/)<br>
 	[Resource 3](https://www.cyberciti.biz/faq/how-do-i-block-an-ip-on-my-linux-server/) <br>
@@ -136,7 +136,7 @@ For Reading:
 		2. Remove all anonymous accounts
 		3. Change default port mappings
 		4. Alter which hosts have access to MySQL
-		5.Do not run MySQL with root level privileges
+		5. Do not run MySQL with root level privileges
 		6. Remove and disable the MySQL history file
 		7. Disable remote logins
 		8. Limit or disable SHOW DATABASES
