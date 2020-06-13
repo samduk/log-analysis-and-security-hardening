@@ -157,7 +157,7 @@ For Reading: <br>
 	Force HTTPS:
 		RewriteEngine On
 		RewriteCond %{HTTPS} !=on
-		RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+		RewriteRule ^(.\*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
 
 	WordPress: Security Check Lists
