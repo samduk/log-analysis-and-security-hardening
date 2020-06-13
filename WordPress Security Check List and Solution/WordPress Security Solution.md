@@ -158,6 +158,6 @@ Adjust the name of your php.ini file if needed (e.g. php5.ini or php7.ini). Be s
 
 # Reference
 [1](https://websitesetup.org/wordpress-security/)
-[2] (https://www.wpbeginner.com/wordpress-security/)
+[2](https://www.wpbeginner.com/wordpress-security/)
 [3](https://www.wordfence.com/learn/wordpress-security-checklist/)
 [4](https://wpsecuritychecklist.org/items/)
