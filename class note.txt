@@ -167,78 +167,8 @@ For Reading:
 	[sFTP 2](https://www.liquidweb.com/kb/using-sftp-and-scp-instead-of-ftp/)
 
 
-	# Introduct a Game to improve command line skill
+	# Introduce a Game to improve command line skill
 
+	https://overthewire.org/wargames/bandit/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	Developer:
-		error.log  dmesg mail
-		access.log
-
-	servers:
-		apache2
-		nginx
-		litespeed
+	Few solutions can be find from [here](https://github.com/samduk/bandit)
