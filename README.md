@@ -138,11 +138,10 @@ Example of few web servers that commonly used in Tibetan Community:
 
 2. How to block the culprit? (using firewalld or iptables)
 
-		<br />
-	-> How to block people by IP <br />
-	-> How to block people by port (or particular services) (assignment)<br />
-	-> How to unblock people by IP<br />
-	-> How to unblock people by port (or delete the RULE)  (assignment)<br />
+- How to block people by IP
+- How to block people by port (or particular services) (assignment)
+- How to unblock people by IP
+- How to unblock people by port (or delete the RULE)  (assignment)
 
 For Reading: <br >
 	[Resource 1](https://www.hostingswift.com/how-to-block-or-unblock-an-ip-address-on-a-linux-server) <br>
@@ -181,10 +180,10 @@ For Reading: <br >
 	Force HTTPS:
 		RewriteEngine On
 		RewriteCond %{HTTPS} !=on
-		RewriteRule ^(.\*)$ https\://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+		RewriteRule ^(.\*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
 
 
-	WordPress: Security Check Lists
+# WordPress: Security Check Lists
 
 <br>
 	[sFTP 1](https://help.one.com/hc/en-us/articles/115005585709-How-do-I-connect-to-an-SFTP-server-with-FileZilla-) <br>
