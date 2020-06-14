@@ -3,31 +3,32 @@ Organized by Envision (https://www.empoweringvision.org/)
 
 
 
-Day 01: Training
+# Day 01: Training
 
 
-	# 1. Download Resources  
+	 1. Download Resources  
 		[link](http://tcert.net/wp-content/uploads/lab.ova)
 
-	# 2. How to install extenion in virtualbox (virtualbox.org)
+	 2. How to install extenion in virtualbox (virtualbox.org)
 
-	# 3. How to import virtual appliance
-		NAT internet  
-		bridget internet
+	 3. How to import virtual appliance
+				NAT internet  
+				bridget internet
 
-		host-only no internet
+				host-only no internet
 
 
 	Terminal
 		ssh username@serverIP
 		ssh researcher@192.168.56.100
 
-	# 4. How to setup NAT and Host only Adapters
+	 4. How to setup NAT and Host only Adapters
 
 
-	# 5. How to connect server using SSH (or PUTTY for window)
+	 5. How to connect server using SSH (or PUTTY for window)
 
-		### Connect to the server
+
+### Connect to the server
 
 			ssh username@serverIP
 
@@ -36,10 +37,11 @@ Day 01: Training
 			[putty](https://www.putty.org/)
 
 
-	# 6. Preview of live log on Notepad (or any editor)
+	 6. Preview of live log on Notepad (or any editor)
 
 Example of different logs:
-  - error.log (very useful for developer)
+
+	- error.log (very useful for developer)
   - kern.log
   - mysql.log
   - sys.log
@@ -53,38 +55,43 @@ Example of few web servers that commonly used in Tibetan Community:
 		litespeed  
 
 
-	# 7. Some useful commands
+	 7. Some useful commands
 
-		how to extract the .gz file?
-			gunzip -k file.gz
+			how to extract the .gz file?
 
-			- ls : Display the list of files and directories in the current folder
-			- cat : prints the content of a file in Terminal Window
-			- grep: searches and filters based on patterns
-			- awk: cant sort each row into fields and display only what is needed
-				awk -F'[ ]' '{print $1}' soyala.net-May-2020
-				awk -F'[ ]' '{print $1 "\t" $7}' soyala.net-May-2020
-				[more link1](https://www.shellhacks.com/awk-print-column-change-field-separator-linux-bash/) <br>
-				[more link2](https://stackoverflow.com/questions/12204192/using-multiple-delimiters-in-awk)<br>
-			- sed: performs find and replace functions
-				- sed -i 's/old-text/new-text/g' input.txt
-			- sort: arranges output into order
-			- uniq: compares adjacent lines and can report, filter or provide a count of duplicates
-			- wc: word count (c,l)
-			- head:
-			- tail:
+				gunzip -k file.gz
 
+			 ls : Display the list of files and directories in the current folder
+		   cat : prints the content of a file in Terminal Window
+			 grep: searches and filters based on patterns
+			 awk: cant sort each row into fields and display only what is needed
 
-	# 8. Log Analysis using commands
+					awk -F'[ ]' '{print $1}' soyala.net-May-2020
+					awk -F'[ ]' '{print $1 "\t" $7}' soyala.net-May-2020
+					[more link1](https://www.shellhacks.com/awk-print-column-change-field-separator-linux-bash/) <br>
+					[more link2](https://stackoverflow.com/questions/12204192/using-multiple-delimiters-in-awk)<br>
 
+			 sed: performs find and replace functions
 
-	# 9. How to trace an IP address ?
+				 sed -i 's/old-text/new-text/g' input.txt
 
-
-		- yum install geoip
+			 sort: arranges output into order
+			 uniq: compares adjacent lines and can report, filter or provide a count of duplicates
+			 wc: word count (c,l)
+			 head:
+			 tail:
 
 
-	 	geoiplookup 99.106.76.40
+	 8. Log Analysis using commands
+
+
+	 9. How to trace an IP address ?
+
+
+			 yum install geoip
+
+
+		 	 geoiplookup 99.106.76.40
 
 
 	Class work:
@@ -107,12 +114,13 @@ Example of few web servers that commonly used in Tibetan Community:
 
 
 
-	# 10. Let us build a simple tool to automate our work.
+	 10. Let us build a simple tool to automate our work.
 
 
-	## Program and save it has tool.sh
+## Program and save it has tool.sh
 
-	#!/bin/bash
+
+\#!/bin/bash
 
 
 	geoiplookup -f /usr/share/GeoIP/GeoLiteCity.dat $1 | cut -d " " -f4-11 | cut -d "," -f1-6;
@@ -122,18 +130,19 @@ Example of few web servers that commonly used in Tibetan Community:
 
 
 
-Day 02:
+# Day 02:
 
-# Block bad people
+## Block bad people
 
 1. Summary of what we did yesterday
 
 2. How to block the culprit? (using firewalld or iptables)
 
-	2.1 How to block people by IP
-	2.2 How to block people by port (or particular services) (assignment)
-	2.3 How to unblock people by IP
-	2.4 How to unblock people by port (or delete the RULE)  (assignment)
+		<br />
+	-> How to block people by IP <br />
+	-> How to block people by port (or particular services) (assignment)<br />
+	-> How to unblock people by IP<br />
+	-> How to unblock people by port (or delete the RULE)  (assignment)<br />
 
 For Reading: <br >
 	[Resource 1](https://www.hostingswift.com/how-to-block-or-unblock-an-ip-address-on-a-linux-server) <br>
@@ -151,7 +160,7 @@ For Reading: <br >
 		2. Remove all anonymous accounts
 		3. Change default port mappings
 		4. Alter which hosts have access to MySQL
-		5.Do not run MySQL with root level privileges
+		5. Do not run MySQL with root level privileges
 		6. Remove and disable the MySQL history file
 		7. Disable remote logins
 		8. Limit or disable SHOW DATABASES
@@ -161,23 +170,29 @@ For Reading: <br >
 
 
 
-		eg  mysql_secure_installation (command)
+		Demo:   mysql_secure_installation (command)
+
 	PHP version:
-		eg
+		Demo
+
 	Server:
-		eg
+		Demo
 
 	Force HTTPS:
 		RewriteEngine On
 		RewriteCond %{HTTPS} !=on
-		RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+		RewriteRule ^(.\*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
 
 	WordPress: Security Check Lists
 
-
+<br>
 	[sFTP 1](https://help.one.com/hc/en-us/articles/115005585709-How-do-I-connect-to-an-SFTP-server-with-FileZilla-) <br>
 	[sFTP 2](https://www.liquidweb.com/kb/using-sftp-and-scp-instead-of-ftp/)
 
 
-	# Introduct a Game to improve command line skill
+# Introduct a Game to improve command line skill
+
+	* [bandit](https://overthewire.org/wargames/bandit/) <br>
+
+		-> If you can't solve the game, few walk-through is available [here](https://github.com/samduk/bandit)	
