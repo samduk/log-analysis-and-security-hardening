@@ -181,7 +181,7 @@ For Reading: <br >
 	Force HTTPS:
 		RewriteEngine On
 		RewriteCond %{HTTPS} !=on
-		RewriteRule ^(.\*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+		RewriteRule ^(.\*)$ https\://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
 
 	WordPress: Security Check Lists
@@ -193,6 +193,6 @@ For Reading: <br >
 
 # Introduct a Game to improve command line skill
 
-	* [bandit](https://overthewire.org/wargames/bandit/) <br>
+	[bandit](https://overthewire.org/wargames/bandit/) <br>
 
-		-> If you can't solve the game, few walk-through is available [here](https://github.com/samduk/bandit)	
+		-> If you can't solve the game, few walk-through is available [here](https://github.com/samduk/bandit)
