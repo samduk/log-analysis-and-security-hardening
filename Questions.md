@@ -1,6 +1,6 @@
 ## Rules of the Game
 
-It's an open book and you can google and youtube :)
+It's an open book test and you can use google, youtube, or any other resources available online. Never ask anybody to do the work on your behalf:)
 
 Q1: How many IP try to access login page of epotala in the month of May 2020?
 
