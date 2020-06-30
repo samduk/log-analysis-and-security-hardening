@@ -154,11 +154,11 @@ For Reading: <br >
 3. How to automate it using fail2ban ?
 
 	***
-<code>
+
 	yum install fail2ban <br />
 	cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local <br />
 	vim /etc/fail2ban/jail.local <br />
-</code>
+
 
 Locate the [DEFAULT] section, which contains the following global options:
 
