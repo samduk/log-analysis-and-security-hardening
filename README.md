@@ -180,8 +180,8 @@ To view the blocked IP lists by fail2ban
 
 iptables -S
 ***
-[More sources](http://www.fail2ban.org/wiki/index.php/MANUAL_0_8)
-
+[More sources on fail2ban](http://www.fail2ban.org/wiki/index.php/MANUAL_0_8)
+***
 
 # Hardening:
 
