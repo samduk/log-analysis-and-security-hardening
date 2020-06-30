@@ -122,8 +122,7 @@ Example of few web servers that commonly used in Tibetan Community:
 
 	geoiplookup -f /usr/share/GeoIP/GeoLiteCity.dat $1 | cut -d " " -f4-11 | cut -d "," -f1-6;
 	geoiplookup $1 | cut -d " " -f5
-
-
+***
 11.  goaccess.io
 
 goaccess access.log -c (Terminal)
