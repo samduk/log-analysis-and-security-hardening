@@ -114,7 +114,7 @@ Example of few web servers that commonly used in Tibetan Community:
 	 10. Let us build a simple tool to automate our work.
 
 
-## Program and save it has tool.sh
+## Write a simple program to automate above tasks and save it has tool.sh
 
 
 \#!/bin/bash
