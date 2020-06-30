@@ -3,13 +3,13 @@
 
 	1. Download Resources
 
-	2. How to install extenion in virtualbox (virtualbox.org)
+	2. How to install extension in VirtualBox (virtualbox.org)
 
 	3. How to import virtual appliance
-			NAT internet
-			bridget internet
+			NAT Adapter
+			Bridge Adapter
 
-			host-only no internet
+			Host-Only Adapter
 
 
 			Terminal
@@ -89,7 +89,7 @@
 
 			Question1. Which country this IP address belong ?
 			Question2: City?
-			Question3: Longittute and Latitude ?
+			Question3: Longitude  and Latitude ?
 
 
 
