@@ -153,6 +153,33 @@ For Reading: <br >
 
 3. How to automate it using fail2ban ?
 
+	***
+```
+	yum install fail2ban
+	cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+	vim /etc/fail2ban/jail.local
+```
+
+Locate the [DEFAULT] section, which contains the following global options:
+
+	    <****>ignoreip:</****> This option enables you to specify IP addresses or hostnames that fail2ban will ignore. For example, you could add your home or office IP address so fail2ban does not prevent you from accessing your own server. To specify multiple addresses, separate them with a space. For example:
+
+	    ignoreip = 127.0.0.1/8 23.185.216.12
+
+			<****>bantime:</****> This option defines in seconds how long an IP address or host is banned. The default is 600 seconds (10 minutes).
+
+			<****>maxretry:</****> This option defines the number of failures a host is allowed before it is banned.
+
+			<****>findtime:</****> This option is used together with the maxretry option. If a host exceeds the maxretry setting within the time period specified by the findtime option, it is banned for the length of time specified by the bantime option.
+
+With fail2ban's global options configured, you are now ready to enable and disable jails for the specific protocols and services you want to protect. By default, fail2ban monitors SSH login attempts (you can search for the [ssh-iptables] section in the jail.local file to view the specific settings for the SSH jail).
+
+
+
+
+
+
+
 # Hardening:
 
 	MySQL Hardening
