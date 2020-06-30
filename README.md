@@ -155,9 +155,9 @@ For Reading: <br >
 
 	***
 <code>
-	yum install fail2ban
-	cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-	vim /etc/fail2ban/jail.local
+	yum install fail2ban <br />
+	cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local <br />
+	vim /etc/fail2ban/jail.local <br />
 </code>
 
 Locate the [DEFAULT] section, which contains the following global options:
