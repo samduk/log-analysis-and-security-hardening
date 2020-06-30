@@ -1,5 +1,6 @@
 # log-analysis-and-security-hardening
-Organized by Envision (https://www.empoweringvision.org/)
+
+- Organized by Envision (https://www.empoweringvision.org/)
 
 
 
@@ -9,13 +10,13 @@ Organized by Envision (https://www.empoweringvision.org/)
 	 1. Download Resources  
 		[link](http://tcert.net/wp-content/uploads/lab.ova)
 
-	 2. How to install extenion in virtualbox (virtualbox.org)
+	 2. How to install extension in virtualbox (virtualbox.org)
 
 	 3. How to import virtual appliance
-				NAT internet  
-				bridget internet
+				NAT adapter  (Internet connection)
+				Bridge adapter (Internet Connection)
 
-				host-only no internet
+				Host-Only adapter (no internet connection)
 
 
 	Terminal
@@ -52,14 +53,14 @@ Example of few web servers that commonly used in Tibetan Community:
 
 		apache2
 		nginx
-		litespeed  
+		litespeed (Apache)  
 
 
 	 7. Some useful commands
 
 			how to extract the .gz file?
 
-				gunzip -k file.gz
+				gunzip -k file.gz   
 
 			 ls : Display the list of files and directories in the current folder
 		   cat : prints the content of a file in Terminal Window
@@ -94,7 +95,7 @@ Example of few web servers that commonly used in Tibetan Community:
 		 	 geoiplookup 99.106.76.40
 
 
-	Class work:
+	Class work:    
 
 		wget https://mirrors-cdn.liferay.com/geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.xz
 
@@ -110,7 +111,7 @@ Example of few web servers that commonly used in Tibetan Community:
 
 			Question1. Which country this IP address belong ?
 			Question2: City?
-			Question3: Longittute and Latitude ?
+			Question3: Longitute and Latitude ?
 
 
 
@@ -180,7 +181,7 @@ For Reading: <br >
 	Force HTTPS:
 		RewriteEngine On
 		RewriteCond %{HTTPS} !=on
-		RewriteRule ^(.\*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+		RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
 
 # WordPress: Security Check Lists
