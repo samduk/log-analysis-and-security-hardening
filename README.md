@@ -221,7 +221,7 @@ iptables -S
 	[sFTP 2](https://www.liquidweb.com/kb/using-sftp-and-scp-instead-of-ftp/)
 
 
-# Introduct a Game to improve command line skill
+# Introduce a Game to improve command line skill
 
 	[bandit](https://overthewire.org/wargames/bandit/) <br>
 
