@@ -162,7 +162,7 @@ vim /etc/fail2ban/jail.local <br />
 
 Locate the [DEFAULT] section, which contains the following global options:
 
-	   <****>ignoreip: This option enables you to specify IP addresses or hostnames that fail2ban will ignore. For example, you could add your home or office IP address so fail2ban does not prevent you from accessing your own server. To specify multiple addresses, separate them with a space. For example:
+<****>ignoreip: This option enables you to specify IP addresses or hostnames that fail2ban will ignore. For example, you could add your home or office IP address so fail2ban does not prevent you from accessing your own server. To specify multiple addresses, separate them with a space. For example:
 
 	    ignoreip = 127.0.0.1/8 23.185.216.12
 
