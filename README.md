@@ -102,7 +102,7 @@ Example of few web servers that commonly used in Tibetan Community:
 
 			geoiplookup -f /usr/share/GeoIP/GeoLiteCity.dat 80.153.137.92
 
-	[resource](https://mirrors-cdn.liferay.com/geolite.maxmind.com/download/geoip/database/)
+[resource](https://mirrors-cdn.liferay.com/geolite.maxmind.com/download/geoip/database/)
 
 
 			Question1. Which country this IP address belong ?
