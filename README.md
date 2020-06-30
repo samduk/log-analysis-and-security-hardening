@@ -131,7 +131,7 @@ To know more, click [here](http://goaccess.io/)
 
 
 
-# Part 02: 2 Sessions (each session 2 hours) Total 4 hours.
+# Part 02: 2 Sessions (each session 2 hours) Total 4 hours. (This section might take 5 hours)
 
 ## Blocking bad people
 
