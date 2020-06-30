@@ -1,8 +1,5 @@
 # log-analysis-and-security-hardening
 
-- Organized by Envision (https://www.empoweringvision.org/)
-
-
 
 # Day 01: Training
 
@@ -53,7 +50,7 @@ Example of few web servers that commonly used in Tibetan Community:
 
 		apache2
 		nginx
-		litespeed (Apache)  
+		litespeed  (Apache)  
 
 
 	 7. Some useful commands
@@ -84,7 +81,6 @@ Example of few web servers that commonly used in Tibetan Community:
 
 
 	 8. Log Analysis using commands
-
 
 	 9. How to trace an IP address ?
 
@@ -128,6 +124,13 @@ Example of few web servers that commonly used in Tibetan Community:
 	geoiplookup $1 | cut -d " " -f5
 
 
+	11.  goaccess.io
+
+goaccess access.log -c (Terminal)
+goaccess access.log -o /usr/share/nginx/html/report.html --log-format=COMBINED
+goaccess access.log -o /usr/share/nginx/html/report.html --log-format=COMBINED --real-time-html
+
+To know more, click [here](http://goaccess.io/)
 
 
 

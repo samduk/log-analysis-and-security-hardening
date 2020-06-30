@@ -6,7 +6,7 @@ Q1: How many IP try to access login page of epotala in the month of May 2020?
 
 Q2: What is the longitude and Latitude of the the person using this IP address: 117.207.53.8 ? By the way, can tell me which city he lives in?
 
-Q3: Oh no, this person is launching DDoS attack on my server, I want to block the person using firewalld..can you help me to write a rule to block this IP address: 66.249.64.169 completely?  
+Q3: Oh no, this person is launching DDoS attack on my server, I want to block the person using firewalld..can you help me to write a rule to block this IP address: 66.249.64.169 completely (including the subnet)?  
 
 Q4: I did a presentation using my friend's laptop and I want to let him view the website, but I don't want him to access ssh. Can you help me to write a rule to block him using ssh but can view the website?
 
