@@ -124,7 +124,7 @@ Example of few web servers that commonly used in Tibetan Community:
 	geoiplookup $1 | cut -d " " -f5
 
 
-	11.  goaccess.io
+11.  goaccess.io
 
 goaccess access.log -c (Terminal)
 goaccess access.log -o /usr/share/nginx/html/report.html --log-format=COMBINED
