@@ -26,6 +26,3 @@ Q6. Can you write a simple bash script to automate to show the country of each o
 87.106.204.9
 
 You can submit the answer to samchoe2002@gmail.com before 5:30PM IST Sunday 14th June 2020.
-
-
-Prize: Winner will get a Business Plan Web Hosting for 1 year from [ePotala Web Solution](https://epotala.com).
