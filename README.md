@@ -1,7 +1,7 @@
 # Log-Analysis-and-Security-Hardening
 
 
-# Day 01: Training
+# Part 01: 2 Sessions (each session 2 hours) Total 4 hours.
 
 
 	 1. Download Resources  
@@ -131,9 +131,9 @@ To know more, click [here](http://goaccess.io/)
 
 
 
-# Day 02:
+# Part 02: 2 Sessions (each session 2 hours) Total 4 hours.
 
-## Block bad people
+## Blocking bad people
 
 1. Summary of what we did yesterday
 
@@ -164,22 +164,23 @@ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local <br />
 
 Locate the [DEFAULT] section, which contains the following global options:
 
-<b>ignoreip:</b> This option enables you to specify IP addresses or hostnames that fail2ban will ignore. For example, you could add your home or office IP address so fail2ban does not prevent you from accessing your own server. To specify multiple addresses, separate them with a space. For example:
+- <b>ignoreip:</b> This option enables you to specify IP addresses or hostnames that fail2ban will ignore. For example, you could add your home or office IP address so fail2ban does not prevent you from accessing your own server. To specify multiple addresses, separate them with a space. For example:
 
 	ignoreip = 127.0.0.1/8 23.185.216.12
 
-<b>bantime:</b> This option defines in seconds how long an IP address or host is banned. The default is 600 seconds (10 minutes).
+- <b>bantime:</b> This option defines in seconds how long an IP address or host is banned. The default is 600 seconds (10 minutes).
 
-<b>maxretry:</b> This option defines the number of failures a host is allowed before it is banned.
+- <b>maxretry:</b> This option defines the number of failures a host is allowed before it is banned.
 
-<b>findtime:</b> This option is used together with the maxretry option. If a host exceeds the maxretry setting within the time period specified by the findtime option, it is banned for the length of time specified by the bantime option.
+- <b>findtime:</b> This option is used together with the maxretry option. If a host exceeds the maxretry setting within the time period specified by the findtime option, it is banned for the length of time specified by the bantime option.
 
 With fail2ban's global options configured, you are now ready to enable and disable jails for the specific protocols and services you want to protect. By default, fail2ban monitors SSH login attempts (you can search for the [ssh-iptables] section in the jail.local file to view the specific settings for the SSH jail).
+***
+To view the blocked IP lists by fail2ban
 
-
-
-
-
+iptables -S
+***
+[More sources](http://www.fail2ban.org/wiki/index.php/MANUAL_0_8)
 
 
 # Hardening:
