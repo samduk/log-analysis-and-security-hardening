@@ -1,4 +1,4 @@
-# log-analysis-and-security-hardening
+# Log-Analysis-and-Security-Hardening
 
 
 # Day 01: Training
@@ -111,11 +111,8 @@ Example of few web servers that commonly used in Tibetan Community:
 
 
 
-	 10. Let us build a simple tool to automate our work.
-
-
-## Write a simple program to automate above tasks and save it has tool.sh
-
+	 10. Write a simple program to automate above tasks and save it has tool.sh
+***
 
 \#!/bin/bash
 
@@ -123,7 +120,8 @@ Example of few web servers that commonly used in Tibetan Community:
 	geoiplookup -f /usr/share/GeoIP/GeoLiteCity.dat $1 | cut -d " " -f4-11 | cut -d "," -f1-6;
 	geoiplookup $1 | cut -d " " -f5
 ***
-11.  goaccess.io
+
+	11.  goaccess.io
 
 goaccess access.log -c (Terminal)
 goaccess access.log -o /usr/share/nginx/html/report.html --log-format=COMBINED
