@@ -1,5 +1,6 @@
 # Log-Analysis-and-Security-Hardening
 
+(Target Audience: Beneficial to all the team)
 
 # Part 01: 2 Sessions (each session 2 hours) Total 4 hours.
 
